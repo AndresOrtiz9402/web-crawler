@@ -1,0 +1,38 @@
+{
+  "name": "web-crawler",
+  "version": "1.0.0",
+  "description": "A backend y typescript project.",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/main.js",
+    "lint": "eslint .",
+    "start:dev": "npx ts-node src/main.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresOrtiz9402/web-crawler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AndresOrtiz9402/web-crawler/issues"
+  },
+  "homepage": "https://github.com/AndresOrtiz9402/web-crawler#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@types/node": "^22.10.10",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "jest": "^29.7.0",
+    "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.21.0"
+  }
+}
