@@ -1,1 +1,1 @@
-export * as Cmd from './crawl.cmd';
+export * from './crawl.cmd';

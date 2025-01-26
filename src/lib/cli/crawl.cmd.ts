@@ -1,6 +1,6 @@
 import { Crawl } from '..';
 
-export function crawlPageCmd() {
+export async function crawlPageCmd() {
   const length = process.argv.length;
 
   if (length < 3) {
@@ -15,5 +15,7 @@ export function crawlPageCmd() {
 
   const BaseURL = process.argv[2];
 
-  Crawl.crawlPage(BaseURL);
+  const URLsObj = await Crawl.crawlPage(BaseURL, BaseURL, {});
+
+  Crawl.logCrawledPages(URLsObj);
 }
