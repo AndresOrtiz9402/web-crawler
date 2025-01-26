@@ -1,1 +1,7 @@
-console.log('hola mundo');
+import { Cli } from './lib';
+
+async function main() {
+  Cli.Cmd.crawlPageCmd();
+}
+
+main();
