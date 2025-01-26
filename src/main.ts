@@ -1,7 +1,7 @@
-import { Cli } from './lib';
+import { CLI } from './lib';
 
-async function main() {
-  Cli.Cmd.crawlPageCmd();
+function main() {
+  CLI.crawlPageCmd();
 }
 
 main();
