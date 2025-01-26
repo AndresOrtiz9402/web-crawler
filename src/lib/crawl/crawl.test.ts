@@ -21,7 +21,7 @@ const normalizeURLTestCases = new Test<string, string>(Crawl.normalizeURL, [
   },
 ]);
 
-const BaseURL = 'https://example.com';
+const baseURL = 'https://example.com';
 
 const getURLsFromHTMLTestCases = new Test<Crawl.GetURLsFromHTMLInput, string[]>(
   Crawl.getURLsFromHTML,
@@ -36,7 +36,7 @@ const getURLsFromHTMLTestCases = new Test<Crawl.GetURLsFromHTMLInput, string[]>(
           </body>
         </html>
         `,
-        BaseURL,
+        baseURL,
       },
       expected: ['https://example.com/path/'],
     },
@@ -50,7 +50,7 @@ const getURLsFromHTMLTestCases = new Test<Crawl.GetURLsFromHTMLInput, string[]>(
           </body>
         </html>
         `,
-        BaseURL,
+        baseURL,
       },
       expected: ['https://example.com/path/'],
     },
@@ -66,7 +66,7 @@ const getURLsFromHTMLTestCases = new Test<Crawl.GetURLsFromHTMLInput, string[]>(
           </body>
         </html>
         `,
-        BaseURL,
+        baseURL,
       },
       expected: [
         'https://example.com/path1/',
@@ -85,7 +85,7 @@ const getURLsFromHTMLTestCases = new Test<Crawl.GetURLsFromHTMLInput, string[]>(
           </body>
         </html>
         `,
-        BaseURL,
+        baseURL,
       },
       expected: [],
     },
@@ -98,7 +98,7 @@ const getURLsFromHTMLTestCases = new Test<Crawl.GetURLsFromHTMLInput, string[]>(
           </body>
         </html>
         `,
-        BaseURL,
+        baseURL,
       },
       expected: [],
     },

@@ -17,5 +17,5 @@ export async function crawlPageCmd() {
 
   const URLsObj = await Crawl.crawlPage(BaseURL, BaseURL, {});
 
-  Crawl.logCrawledPages(URLsObj);
+  Crawl.printReport(URLsObj);
 }

@@ -1,5 +1,7 @@
 import { JSDOM } from 'jsdom';
 
+import { type URLsObj, type Resp } from '.';
+
 const validateURL = (url: string): URL | null => {
   try {
     return new URL(url);
@@ -8,12 +10,6 @@ const validateURL = (url: string): URL | null => {
   }
   return null;
 };
-
-interface Resp {
-  ok: boolean;
-  content?: Response;
-  error?: Error;
-}
 
 const validateFetch = async (url: string): Promise<Resp> => {
   try {
@@ -75,10 +71,6 @@ export function normalizeURL(url: string): string {
 }
 
 export type NormalizeURL = typeof normalizeURL;
-
-interface URLsObj {
-  [key: string]: number;
-}
 
 //Recursive function
 export async function crawlPage(
